@@ -124,3 +124,8 @@
     height: 100%;
     object-fit: cover;
 }
+
+.developer {
+    color: #94a3b8;
+    font-size: 0.75rem;
+}
