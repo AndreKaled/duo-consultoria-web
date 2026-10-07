@@ -1,122 +1,25 @@
+:root {
+    --bs-body-font-family: "Poppins", sans-serif;
+}
 
-        body {
-            min-height: 100vh;
-            background-color: #f8fafc;
-        }
+* { font-family: "Poppins", sans-serif; }
 
-        .form-card {
-            max-width: 720px;
-            border: 1px solid #e9ecef;
-            border-radius: 1rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
+body {
+    min-height: 100vh;
+    background-color: #f8fafc;
+    font-family: "Poppins", sans-serif;
+}
 
-        .logo {
-            width: 56px;
-            height: 56px;
-            object-fit: contain;
-        }
-
-        .company-name {
-            color: #1679c9;
-        }
-
-        .form-label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            color: #374151;
-        }
-
-        .required {
-            color: #dc3545;
-        }
-
-        .form-control {
-            padding: 0.75rem 1rem;
-            background-color: #f8fafc;
-            border-color: #e2e8f0;
-            border-radius: 0.6rem;
-            font-size: 0.9rem;
-        }
-
-        .form-control:focus {
-            background-color: #fff;
-            border-color: #1679c9;
-            box-shadow: 0 0 0 0.2rem rgba(22, 121, 201, 0.15);
-        }
-
-        .service-option {
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
-            padding: 0.85rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.75rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            background: #fff;
-        }
-
-        .service-option:hover {
-            border-color: #cbd5e1;
-            background-color: #f8fafc;
-        }
-
-        .service-option.selected {
-            border-color: #1679c9;
-            background-color: rgba(22, 121, 201, 0.05);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
-        }
-
-        .service-option input {
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-            accent-color: #1679c9;
-        }
-
-        .submit-button {
-            background-color: #1c81d4;
-            border-color: #1c81d4;
-            padding: 0.85rem 1rem;
-            border-radius: 0.75rem;
-            font-weight: 500;
-            box-shadow: 0 8px 18px rgba(22, 121, 201, 0.12);
-            transition: all 0.2s ease;
-        }
-
-        .submit-button:hover {
-            background-color: #1679c9;
-            border-color: #1679c9;
-            transform: translateY(-1px);
-        }
-
-        .privacy {
-            color: #94a3b8;
-            font-size: 0.75rem;
-        }
-
-        @media (max-width: 576px) {
-            .form-card {
-                border-radius: 0.75rem;
-            }
-
-            .company-header {
-                flex-direction: column;
-                gap: 0.25rem !important;
-            }
-
-            .company-title {
-                font-size: 1.25rem;
-                text-align: center;
-            }
-        }
+.form-card {
+    max-width: 720px;
+    border: 1px solid #e9ecef;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
 
 .logo {
-    width: 36px;
-    height: 36px;
+    width: 56px;
+    height: 56px;
 }
 
 .logo img {
@@ -125,7 +28,104 @@
     object-fit: cover;
 }
 
+.company-name {
+    color: #1679c9;
+}
+
+.form-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #374151;
+}
+
+.required {
+    color: #dc3545;
+}
+
+.form-control {
+    padding: 0.75rem 1rem;
+    background-color: #f8fafc;
+    border-color: #e2e8f0;
+    border-radius: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #1679c9;
+    box-shadow: 0 0 0 0.2rem rgba(22, 121, 201, 0.15);
+}
+
+.service-option {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.85rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #fff;
+}
+
+.service-option:hover {
+    border-color: #cbd5e1;
+    background-color: #f8fafc;
+}
+
+.service-option.selected {
+    border-color: #1679c9;
+    background-color: rgba(22, 121, 201, 0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.service-option input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #1679c9;
+}
+
+.submit-button {
+    background-color: #1c81d4;
+    border-color: #1c81d4;
+    padding: 0.85rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    box-shadow: 0 8px 18px rgba(22, 121, 201, 0.12);
+    transition: all 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #1679c9;
+    border-color: #1679c9;
+    transform: translateY(-1px);
+}
+
+.privacy {
+    color: #94a3b8;
+    font-size: 0.75rem;
+}
+
 .developer {
     color: #94a3b8;
     font-size: 0.75rem;
+}
+
+@media (max-width: 576px) {
+    .form-card {
+        border-radius: 0.75rem;
+    }
+
+    .company-header {
+        flex-direction: column;
+        gap: 0.25rem !important;
+    }
+
+    .company-title {
+        font-size: 1.25rem;
+        text-align: center;
+    }
 }
